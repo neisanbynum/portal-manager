@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      types-react:
-        specifier: github:neisanbynum/types-react
-        version: https://codeload.github.com/neisanbynum/types-react/tar.gz/6a74e962bf843a05a19e8e1ef6fe47dfc571da05(react@19.1.0)
+      '@neisanworks/types-react':
+        specifier: 1.0.3
+        version: 1.0.3(react@19.1.0)
     devDependencies:
       '@eslint/js':
         specifier: ^9.25.1
@@ -102,6 +102,11 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@neisanworks/types-react@1.0.3':
+    resolution: {integrity: sha512-HIzFOc/JOwMYaXnekaPwiwjOQvwtM0Ft6aRi3LfTipnBburJkIOGVXpd8wEnzjkjbJIjFVv8AAh/YHGN3pCzqg==, tarball: https://npm.pkg.github.com/download/@neisanworks/types-react/1.0.3/f4827bf6942c183750957b211778a16e63f5cc35}
+    peerDependencies:
+      react: '>=18'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -532,12 +537,6 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
-  types-react@https://codeload.github.com/neisanbynum/types-react/tar.gz/6a74e962bf843a05a19e8e1ef6fe47dfc571da05:
-    resolution: {tarball: https://codeload.github.com/neisanbynum/types-react/tar.gz/6a74e962bf843a05a19e8e1ef6fe47dfc571da05}
-    version: 1.0.1
-    peerDependencies:
-      react: '>=18'
-
   typescript-eslint@8.31.0:
     resolution: {integrity: sha512-u+93F0sB0An8WEAPtwxVhFby573E8ckdjwUUQUj9QA4v8JAvgtoDdIyYR3XFwFHq2W1KJ1AurwJCO+w+Y1ixyQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -624,6 +623,10 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@neisanworks/types-react@1.0.3(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1059,10 +1062,6 @@ snapshots:
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
-
-  types-react@https://codeload.github.com/neisanbynum/types-react/tar.gz/6a74e962bf843a05a19e8e1ef6fe47dfc571da05(react@19.1.0):
-    dependencies:
-      react: 19.1.0
 
   typescript-eslint@8.31.0(eslint@9.25.1)(typescript@5.8.3):
     dependencies:

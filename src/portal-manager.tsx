@@ -1,7 +1,7 @@
-import { isFC, type HTMLProperties, type Thunk } from 'types-react'
 import React from 'react'
 import { cn } from '@sglara/cn'
 import type { PortalManagerValues, PortalComponent } from './types'
+import { type HTMLProperties, type Thunk, isFC } from '@neisanworks/types-react'
 
 
 export const PortalContext = React.createContext<PortalManagerValues | null>(null)

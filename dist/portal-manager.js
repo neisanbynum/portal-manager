@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { isFC } from 'types-react';
 import React from 'react';
 import { cn } from '@sglara/cn';
+import { isFC } from '@neisanworks/types-react';
 export const PortalContext = React.createContext(null);
 export const PortalManager = ({ children, className }) => {
     const layer = React.useRef(null);

@@ -1,4 +1,4 @@
-import type { Thunk } from "types-react"
+import type { Thunk } from "@neisanworks/types-react"
 
 export type PortalComponent<TProperties = unknown> = {
 	id: string
