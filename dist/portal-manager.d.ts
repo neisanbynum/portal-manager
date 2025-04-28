@@ -4,4 +4,3 @@ import type { PortalManagerValues } from './types';
 export declare const PortalContext: React.Context<PortalManagerValues | null>;
 export declare const PortalManager: React.FC<Pick<HTMLProperties<HTMLDivElement>, 'children' | 'className'>>;
 export declare const usePortalManager: Thunk<[], PortalManagerValues>;
-//# sourceMappingURL=portal-manager.d.ts.map

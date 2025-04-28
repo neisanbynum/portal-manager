@@ -19,7 +19,7 @@ export const PortalManager = ({ children, className }) => {
                     .filter(({ component }) => isFC(component))
                     .map(({ id, component, props }) => {
                     const Component = React.memo(component);
-                    return _jsx(Component, { ...(props !== null && props !== void 0 ? props : {}) }, id);
+                    return _jsx(Component, { ...(props ?? {}) }, id);
                 }) })] }));
 };
 export const usePortalManager = () => {

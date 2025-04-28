@@ -11,4 +11,3 @@ export type PortalManagerValues = {
     clear: Thunk;
     layer: React.RefObject<HTMLDivElement | null>;
 };
-//# sourceMappingURL=types.d.ts.map
