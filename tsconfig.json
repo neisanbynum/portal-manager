@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",                       // Modern enough for wide browser support
+    "module": "ESNext",                        // Keep it ESM for modern bundlers
+    "moduleResolution": "Node",                // Standard for Node + Web
+    "declaration": true,                       // Important: generates .d.ts files!
+    "declarationMap": true,                    // Optional: maps for easier debugging types
+    "emitDeclarationOnly": false,              // Output both JS and d.ts
+    "outDir": "./dist",                        // Match your package.json output
+    "rootDir": "./src",                        // Assume you keep source code cleanly under /src
+    "jsx": "react-jsx",                        // Modern JSX transform (React 17+)
+    "esModuleInterop": true,                   // Easier default imports
+    "skipLibCheck": true,                      // Faster build by skipping type check of node_modules
+    "forceConsistentCasingInFileNames": true,  // Avoid case issues
+    "strict": true,                            // Always recommended: full type safety
+    "allowSyntheticDefaultImports": true,      // Helps with import React from 'react'
+    "verbatimModuleSyntax": true                // Allow 'export type *' syntax cleanly (TS5+)
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
