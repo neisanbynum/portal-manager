@@ -39,6 +39,6 @@
     "typescript-eslint": "^8.31.0"
   },
   "dependencies": {
-    "@neisanworks/types-react": "^1.0.3"
+    "@neisanworks/types-react": "^1.0.4"
   }
 }

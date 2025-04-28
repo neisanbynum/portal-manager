@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@neisanworks/types-react':
-        specifier: 1.0.3
-        version: 1.0.3(react@19.1.0)
+        specifier: ^1.0.4
+        version: 1.0.4(react@19.1.0)
     devDependencies:
       '@eslint/js':
         specifier: ^9.25.1
@@ -103,8 +103,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@neisanworks/types-react@1.0.3':
-    resolution: {integrity: sha512-HIzFOc/JOwMYaXnekaPwiwjOQvwtM0Ft6aRi3LfTipnBburJkIOGVXpd8wEnzjkjbJIjFVv8AAh/YHGN3pCzqg==, tarball: https://npm.pkg.github.com/download/@neisanworks/types-react/1.0.3/f4827bf6942c183750957b211778a16e63f5cc35}
+  '@neisanworks/types-react@1.0.4':
+    resolution: {integrity: sha512-yVs0V82mDhYL/LFLv+k9WTChUHlGu4Y2WUPm8b/XaL3qkN4xvo5sYzCN09GIWUED8qKuNJAPEYtAzwABXe1Hyw==, tarball: https://npm.pkg.github.com/download/@neisanworks/types-react/1.0.4/4dcad92017c9445366ba3c39cb010fe2132d5962}
     peerDependencies:
       react: '>=18'
 
@@ -624,7 +624,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@neisanworks/types-react@1.0.3(react@19.1.0)':
+  '@neisanworks/types-react@1.0.4(react@19.1.0)':
     dependencies:
       react: 19.1.0
 
