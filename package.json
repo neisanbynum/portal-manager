@@ -1,44 +1,52 @@
 {
-  "name": "portal-manager",
-  "version": "1.0.2",
-  "description": "Portal manager for neisanbynum applications, libraries, and components.",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "scripts": {
-    "build": "tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neisanbynum/portal-manager.git"
-  },
-  "keywords": [],
-  "author": "neisanbynum",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/neisanbynum/portal-manager/issues"
-  },
-  "homepage": "https://github.com/neisanbynum/portal-manager#readme",
-  "devDependencies": {
-    "@eslint/js": "^9.25.1",
-    "@sglara/cn": "^1.0.0",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "eslint": "^9.25.1",
-    "globals": "^16.0.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.31.0"
-  },
-  "dependencies": {
-    "@neisanworks/types-react": "^1.0.4"
-  }
+	"name": "@neisanworks/portal-manager",
+	"version": "1.0.3",
+	"description": "Portal manager for neisanbynum applications, libraries, and components.",
+	"publishConfig": {
+		"@neisanworks:registry": "https://npm.pkg.github.com/"
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"publish:package": "pnpm run build && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/neisanworks/portal-manager.git"
+	},
+	"keywords": [],
+	"author": "Nathan Bynum",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/neisanworks/portal-manager/issues"
+	},
+	"homepage": "https://github.com/neisanworks/portal-manager#readme",
+	"devDependencies": {
+		"@eslint/js": "^9.25.1",
+		"@types/react": "^19.1.2",
+		"@types/react-dom": "^19.1.2",
+		"eslint": "^9.25.1",
+		"globals": "^16.0.0",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.31.0"
+	},
+	"dependencies": {
+		"@neisanworks/types-react": "^1.0.5",
+		"@sglara/cn": "^1.0.0",
+		"tailwindcss": "^4.1.3"
+	},
+	"peerDependencies": {
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0"
+	}
 }

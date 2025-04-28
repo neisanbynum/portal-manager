@@ -15,7 +15,7 @@ export const PortalManager = ({ children, className }) => {
     }, []);
     const clear = React.useCallback(() => setPortals([]), []);
     const values = React.useMemo(() => ({ portals, open, close, clear, layer }), [portals, open, close, clear, layer]);
-    return (_jsxs(PortalContext.Provider, { value: values, children: [children, _jsx("div", { id: 'portal-root', ref: layer, className: cn('fixed top-0 left-0 z-100 w-screen h-screen pointer-events-none', className), children: portals
+    return (_jsxs(PortalContext.Provider, { value: values, children: [children, _jsx("div", { id: 'portal-root', ref: layer, className: cn('fixed top-0 left-0 z-100 flex flex-col items-center justify-center w-screen h-screen pointer-events-none', className), children: portals
                     .filter(({ component }) => isFC(component))
                     .map(({ id, component, props }) => {
                     const Component = React.memo(component);

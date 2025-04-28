@@ -11,9 +11,9 @@ export const PortalManager: React.FC<Pick<HTMLProperties<HTMLDivElement>, 'child
 	className
 }) => {
 	const layer = React.useRef<HTMLDivElement>(null)
-	const [portals, setPortals] = React.useState<Array<PortalComponent>>([])
+	const [portals, setPortals] = React.useState<Array<PortalComponent<React.FC>>>([])
 
-	const open: Thunk<[PortalComponent]> = React.useCallback((portal) => {
+	const open: Thunk<[PortalComponent<React.FC>]> = React.useCallback((portal) => {
 		setPortals((prev) => (prev.some((p) => p.id === portal.id) ? prev : [...prev, portal]))
 	}, [])
 
@@ -32,7 +32,7 @@ export const PortalManager: React.FC<Pick<HTMLProperties<HTMLDivElement>, 'child
 			<div
 				id='portal-root'
 				ref={layer}
-				className={cn('fixed top-0 left-0 z-100 w-screen h-screen pointer-events-none', className)}
+				className={cn('fixed top-0 left-0 z-100 flex flex-col items-center justify-center w-screen h-screen pointer-events-none', className)}
 			>
 				{portals
 					.filter(({ component }) => isFC(component))
